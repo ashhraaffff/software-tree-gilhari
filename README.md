@@ -1,7 +1,7 @@
 # software-tree-gilhari
 Gilhari Simplifying Exchanging of JSON data with an RDBMS on Microsoft Azure
 
-#Description
+# Description
 -  Developing a standalone program to first populate a database with sample JSON data (50 objects) using the Gilhari microservice framework, and then transfer JSON data in and out of an RDBMS using the Gilhari microservice framework.
 -  Also show the use of PUT and DELETE REST APIs of Gilhari.
 -  Only one type of JSON objects (e.g., Employee)
