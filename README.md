@@ -2,13 +2,10 @@
 Gilhari Simplifying Exchanging of JSON data with an RDBMS on Microsoft Azure
 
 # Description
--  Developing a standalone program to first populate a database with sample JSON data (50 objects) using the Gilhari microservice framework, and then transfer JSON data in and out of an RDBMS using the Gilhari microservice framework.
--  Also show the use of PUT and DELETE REST APIs of Gilhari.
--  Only one type of JSON objects (e.g., Employee)
--  Documentation of the application functionality and how to run it in a README.txt file
--  Writing a tutorial explaining the steps to use the Gilhari framework to develop the given application and to run it, Highlight the simplicity of using Gilhari in terms of number of steps, low code requirement, etc.
--  Uploading the project on Github
-- Two types of inter-related (1:1) JSON objects (e.g., Employee and Address)
--  Uploading and running the Gilhari microservice as well as the client program on  Azure. You will need a free tier developer license for Azure
--  Using MySQL or RDS Postgres Database on Azure
-- Bonus: Create a YouTube video explaining the use and benefit of Gilhari in the project. Maybe contrast with using other technology      stack or different coding techniques for the same functionality.
+This repository showcases how the Gilhari microservice framework streamlines the process of exchanging JSON data with an RDBMS on Azure. This capability is demonstrated through two subprojects: BookstoreSchema and EmployeeSchema, which illustrate the functionality of handling JSON data.
+
+Developed by Software Tree, the Gilhari microservice framework is designed to simplify the integration of application-specific object and relational models. Available as a Docker image, Gilhari is highly configurable to meet the specific needs of various applications. It offers a REST interface that provides APIs for standard CRUD operations—Create, Retrieve, Update, and Delete—on JSON objects. This REST interface supports multiple HTTP methods, including POST, GET, PUT, and DELETE, making it easy to manage data without writing additional code for API handling or database access.
+
+The framework's flexibility and ease of use significantly reduce the complexity involved in developing and maintaining data exchange processes. Users can focus on their application logic without worrying about the underlying infrastructure.
+
+For those interested in learning more about the capabilities and applications of the Gilhari microservice framework, additional information is available on Software Tree’s website at https://www.softwaretree.com. This resource provides comprehensive details on how Gilhari can be leveraged to enhance data handling efficiency and streamline application development.
