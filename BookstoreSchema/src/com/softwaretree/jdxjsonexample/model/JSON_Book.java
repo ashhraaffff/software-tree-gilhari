@@ -13,13 +13,13 @@ import com.softwaretree.jdx.JDX_JSONObject;
  * @author ashraf
  *
  */
-public class JSON_Bookstore extends JDX_JSONObject {
+public class JSON_Book extends JDX_JSONObject {
 
-    public JSON_Bookstore() {
+    public JSON_Book() {
         super();
     }
 
-    public JSON_Bookstore(JSONObject jsonObject) throws JSONException {
+    public JSON_Book(JSONObject jsonObject) throws JSONException {
         super(jsonObject);
     }
 }
