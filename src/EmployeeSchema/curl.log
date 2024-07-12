@@ -1,0 +1,61 @@
+-e ** BEGIN OUTPUT **
+** Delete all Employee objects to start fresh
+0
+-e ** Insert one Employee object 
+
+New Employee entity(entities) inserted; result=null-e 
+** Query all Employee objects
+[{"DOB":381484800390,"name":"John39","compensation":54039,"exempt":true,"id":39}]
+** Insert multiple (two) Employee objects
+New Employee entity(entities) inserted; result=null
+** Query all Employee objects
+[{"DOB":381484800390,"name":"John39","compensation":54039,"exempt":true,"id":39},{"DOB":381484800400,"name":"Mike40","compensation":54040,"exempt":false,"id":40},{"DOB":381484800410,"name":"Mary41","compensation":54041,"exempt":true,"id":41}]
+** Query non-exempted Employee objects
+Error during query: Error running instance method
+com.softwaretree.jdx.JDXSQLException: ERROR: operator does not exist: boolean = integer
+  Hint: No operator matches the given name and argument types. You might need to add explicit type casts.
+  Position: 70.  SQLException details follow.  SQLState: 42883; Message:  ERROR: operator does not exist: boolean = integer
+  Hint: No operator matches the given name and argument types. You might need to add explicit type casts.
+  Position: 70; Vendor code:   0
+	at com.softwaretree.jdx.JDXSImpl.query(SourceFile:471)
+	at com.softwaretree.jdx.JDXHelper.getObjects(SourceFile:115)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at node.MethodCallBaton.invokeMethod(MethodCallBaton.java:13)
+
+** Query the count of exempted Employee objects
+Error during aggregate query: Error running instance method
+com.softwaretree.jdx.JDXSQLException: ERROR: operator does not exist: boolean = integer
+  Hint: No operator matches the given name and argument types. You might need to add explicit type casts.
+  Position: 44.  SQLException details follow.  SQLState: 42883; Message:  ERROR: operator does not exist: boolean = integer
+  Hint: No operator matches the given name and argument types. You might need to add explicit type casts.
+  Position: 44; Vendor code:   0
+	at com.softwaretree.jdx.JDXSImpl.getAggregate(SourceFile:957)
+	at com.softwaretree.jdx.JDXHelper.getAggregate(SourceFile:379)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at node.MethodCallBaton.invokeMethod(MethodCallBaton.java:13)
+
+** Query the count of all exempted Employee objects
+Error during aggregate query: Error running instance method
+com.softwaretree.jdx.JDXSQLException: ERROR: operator does not exist: boolean = integer
+  Hint: No operator matches the given name and argument types. You might need to add explicit type casts.
+  Position: 44.  SQLException details follow.  SQLState: 42883; Message:  ERROR: operator does not exist: boolean = integer
+  Hint: No operator matches the given name and argument types. You might need to add explicit type casts.
+  Position: 44; Vendor code:   0
+	at com.softwaretree.jdx.JDXSImpl.getAggregate(SourceFile:957)
+	at com.softwaretree.jdx.JDXHelper.getAggregate(SourceFile:379)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at node.MethodCallBaton.invokeMethod(MethodCallBaton.java:13)
+
+** Query the count of all Employee objects
+3
+** END OUTPUT **
+

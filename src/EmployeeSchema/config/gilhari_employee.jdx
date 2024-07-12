@@ -1,5 +1,5 @@
-JDX_DATABASE JDX:jdbc:mysql://ps1-group3.mysql.database.azure.com:3306/gilhari?useSSL=true&requireSSL=true&verifyServerCertificate=false;USER=ashraf;PASSWORD=Passpass@1;JDX_DBTYPE=MYSQL;DEBUG_LEVEL=5
-JDBC_DRIVER com.mysql.cj.jdbc.Driver
+JDX_DATABASE JDX:jdbc:postgresql://ps1-group3.postgres.database.azure.com:5432/gilhari?sslmode=require;USER=ashraf;PASSWORD=Passpass@1;JDX_DBTYPE=POSTGRES;DEBUG_LEVEL=5
+JDBC_DRIVER org.postgresql.Driver
 
 // Hard coding of the IP address of a MySQL database instance is needed to access the database 
 // from within a docker container. Same for a Postgres database.
