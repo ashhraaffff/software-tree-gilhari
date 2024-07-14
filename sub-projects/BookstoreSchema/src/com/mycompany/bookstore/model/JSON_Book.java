@@ -1,4 +1,4 @@
-package com.softwaretree.jdxjsonexample.model;
+package com.mycompany.bookstore.model;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -22,4 +22,6 @@ public class JSON_Book extends JDX_JSONObject {
     public JSON_Book(JSONObject jsonObject) throws JSONException {
         super(jsonObject);
     }
+
+    public JSON_Publisher publisher;
 }

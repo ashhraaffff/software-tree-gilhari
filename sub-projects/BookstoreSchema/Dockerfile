@@ -5,7 +5,7 @@
 
 FROM dperiwal/st_repo:gilhari
 #FROM gilhari:0.8
-WORKDIR /opt/gilhari_simple_example
+WORKDIR /opt/gilhari_bookstore_example
 
 ADD bin ./bin
 ADD config ./config
