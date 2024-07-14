@@ -1,23 +1,19 @@
 JDX_DATABASE JDX:jdbc:mysql://ps1-group3.mysql.database.azure.com:3306/gilhari?useSSL=true&requireSSL=true&verifyServerCertificate=false;USER=ashraf;PASSWORD=Passpass@1;JDX_DBTYPE=MYSQL;DEBUG_LEVEL=5
 JDBC_DRIVER com.mysql.cj.jdbc.Driver
 
-JDX_OBJECT_MODEL_PACKAGE com.softwaretree.jdxjsonexample.model
-;
 
+
+JDX_OBJECT_MODEL_PACKAGE com.mycompany.bookstore.model
+;
 REM ************************************************************************
 CLASS .JSON_Publisher TABLE Publisher
   VIRTUAL_ATTRIB publisherId ATTRIB_TYPE int
   VIRTUAL_ATTRIB publisherName ATTRIB_TYPE java.lang.String
   VIRTUAL_ATTRIB phoneNo ATTRIB_TYPE java.lang.String
   VIRTUAL_ATTRIB email ATTRIB_TYPE java.lang.String
-  VIRTUAL_COMPLEXATTRIB aB ATTRIB_TYPE com.softwaretree.jdxjsonexample.model.Book
   
   PRIMARY_KEY publisherId
-  
-  RELATIONSHIP aB REFERENCES .JSON_Book BYVALUE REFERENCED_KEY parentId WITH publisherId 
 ;
-
-
 CLASS .JSON_Book TABLE Book
   VIRTUAL_ATTRIB bookId ATTRIB_TYPE int
   VIRTUAL_ATTRIB bookName ATTRIB_TYPE java.lang.String
@@ -28,9 +24,7 @@ CLASS .JSON_Book TABLE Book
   VIRTUAL_ATTRIB publisherId ATTRIB_TYPE int
   
   PRIMARY_KEY bookId
-  
-  REFERENCE_KEY parentId publisherId
+  RELATIONSHIP publisher REFERENCES .JSON_Publisher WITH publisherId
+  SQLMAP FOR release_date SQLTYPE DATETIME
 ;
-
-
 

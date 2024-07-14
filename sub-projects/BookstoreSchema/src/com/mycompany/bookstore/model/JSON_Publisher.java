@@ -1,4 +1,4 @@
-package com.softwaretree.jdxjsonexample.model;
+package com.mycompany.bookstore.model;
 
 import org.json.JSONException;
 import org.json.JSONObject;
