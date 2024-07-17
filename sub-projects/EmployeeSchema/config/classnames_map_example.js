@@ -1,1 +1,1 @@
-{"Employee": "com.softwaretree.jdxjsonexample.model.JSON_Employee"}
+{"Employee": "com.mycompany.employee.model.JSON_Employee"}

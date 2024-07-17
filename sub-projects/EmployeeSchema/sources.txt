@@ -1,1 +1,1 @@
-./src/com/softwaretree/jdxjsonexample/model/JSON_Employee.java
+./src/com/mycompany/employee/model/JSON_Employee.java

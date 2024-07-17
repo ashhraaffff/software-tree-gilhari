@@ -77,7 +77,7 @@ Most of the settings in the above examples are self-explanatory. Here is a brief
 
 
 To build and run the RESTful microservice from scratch:
--------------------------------------------------
+
 
 - Make appropriate configuration changes in the ORM specification file (config/gilhari_simple_example.jdx) and the file gilhari_service.config.
 
