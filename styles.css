@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background: url('https://img.pr.com/release/2011/16987/pressrelease_16987_1605036324.png') no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+.background-text {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    pointer-events: none;
+    user-select: none;
+    font-size: 2em;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.subtitle pre {
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    text-align: center;
+    padding: 30px;
+    border: 1px solid #bbb;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.8); /* translucent background */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    max-width: 800px;
+    min-height: 100px; /* minimum height, will expand based on content */
+    margin-top: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#apiResponse {
+    margin-top: 20px;
+    text-align: left;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: rgba(249, 249, 249, 0.8);
+    color: #333;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+footer {
+    margin-top: auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+}
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
