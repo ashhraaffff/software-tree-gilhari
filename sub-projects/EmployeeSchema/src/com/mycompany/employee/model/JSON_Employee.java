@@ -1,4 +1,4 @@
-package com.softwaretree.jdxjsonexample.model;
+package com.mycompany.employee.model;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -10,7 +10,7 @@ import com.softwaretree.jdx.JDX_JSONObject;
  * based on the class JSONObject.  This class needs to define just two constructors.
  * Most of the processing is handled by the superclass JDX_JSONObject.
  * <p> 
- * @author Damodar Periwal
+ * @author ashraf
  *
  */
 public class JSON_Employee extends JDX_JSONObject {
